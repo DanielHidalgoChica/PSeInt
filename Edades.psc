@@ -1,21 +1,37 @@
 Algoritmo edades
 	//EJercicio de PSeInt: Leer dos edades y mostrarlas
-	Definir edad1 Como Entero
-	edad1=0
-	definir edad2 como entero
-	edad2=0
+	Definir edadJose Como Entero
+	edadJose=-1
+	definir edadJuan como entero
+	edadJuan=-1
+	definir aux  Como Entero
+	aux = -1
 	escribir "Itroduce la edad de Jose"
-	leer edad1
+	leer edadJose
 	escribir "Introduce la edad de Juan"
-	Leer edad2
+	Leer edadJuan
 	
 	//Intercambio de varialbles
+	aux = edadJose
 	
-	edad1 = edad2
-	edad2 = edad1
+	edadJose = edadJuan
 	
-	Escribir "La edad de Jose es de ", edad1, " años" 
+	edadJuan = aux
 	
-	Escribir "La edad de Juan es de ", edad2, " años" 
+	
+	Si edadJose>=18 Entonces
+		Escribir "La edad de Jose es de ", edadJose, " años.", " Jose es mayor de edad." 
+	SiNo
+		Escribir "La edad de Jose es de ", edadJose, " años.", " Jose es menor de edad."
+	Fin Si
+	
+	
+	Si edadJuan>=18 Entonces
+		Escribir "La edad de Juan es de ", edadJuan, " años.", " Juan es mayor de edad." 
+	SiNo
+		Escribir "La edad de Juan es de ", edadJuan, " años.", " Juan es menor de edad."
+	Fin Si
+	
+	
 	
 FinAlgoritmo
