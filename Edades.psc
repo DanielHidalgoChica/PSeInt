@@ -9,6 +9,11 @@ Algoritmo edades
 	escribir "Introduce la edad de Juan"
 	Leer edad2
 	
+	//Intercambio de varialbles
+	
+	edad1 = edad2
+	edad2 = edad1
+	
 	Escribir "La edad de Jose es de ", edad1, " años" 
 	
 	Escribir "La edad de Juan es de ", edad2, " años" 
